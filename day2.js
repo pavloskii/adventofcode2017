@@ -22,7 +22,7 @@ var sum = 0;
 for (var i = 0; i < arrayOfRows.length; i++) {
     arrayOfArrays.push(arrayOfRows[i].replace(/\s+/g,' ').trim().split(" ").map(Number));
 }
-console.log(arrayOfArrays);
+
 for (var i = 0; i < arrayOfArrays.length; i++) {
     var max = arrayOfArrays[i].reduce(function(a, b) {
         return Math.max(a, b);
